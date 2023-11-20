@@ -1,0 +1,568 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "BooksNode",
+    "dateExported": "2023-11-20T00:17:24.450Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "0e0ede7e-dc9b-4886-b74a-bf78990427fd",
+            "name": "book",
+            "containerId": "",
+            "created": "2023-11-19T23:47:10.049Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "6a3b2342-880d-48f7-a19c-38bfc590c93d",
+            "name": "category",
+            "containerId": "",
+            "created": "2023-11-19T23:47:18.955Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "99d8872f-b6bf-445f-b250-97c86ff975b3",
+            "name": "user",
+            "containerId": "",
+            "created": "2023-11-19T23:47:35.493Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "24bfc39c-c376-4657-9ada-72f7eaae1707",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "6a3b2342-880d-48f7-a19c-38bfc590c93d",
+            "name": "getAllCategories",
+            "url": "/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-20T00:02:34.180Z",
+            "modified": "2023-11-20T00:05:23.501Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "534bde10-20b8-4738-b873-34ea7936a252",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "99d8872f-b6bf-445f-b250-97c86ff975b3",
+            "name": "getUsers",
+            "url": "/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-20T00:09:06.082Z",
+            "modified": "2023-11-20T00:09:06.082Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "422b0537-cd44-4446-a817-fca77b650b52",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "6a3b2342-880d-48f7-a19c-38bfc590c93d",
+            "name": "getCategory",
+            "url": "/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-20T00:02:44.079Z",
+            "modified": "2023-11-20T00:05:08.137Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e7d1da30-5b7f-44e1-ac94-2eedfd1d3da0",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "99d8872f-b6bf-445f-b250-97c86ff975b3",
+            "name": "getUser",
+            "url": "/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-20T00:09:08.431Z",
+            "modified": "2023-11-20T00:09:08.431Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fcb95002-e4ec-4a68-9bdb-b0d4b294fd97",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "0e0ede7e-dc9b-4886-b74a-bf78990427fd",
+            "name": "getAllBooks",
+            "url": "/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-19T23:48:23.623Z",
+            "modified": "2023-11-20T00:04:41.670Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d90a167a-cc33-4384-a179-8206f6def3a8",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "6a3b2342-880d-48f7-a19c-38bfc590c93d",
+            "name": "getCategoryError",
+            "url": "/999",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-20T00:02:54.015Z",
+            "modified": "2023-11-20T00:05:40.526Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "245c78a4-8199-417e-9624-4c8c5411958d",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "99d8872f-b6bf-445f-b250-97c86ff975b3",
+            "name": "getUserError",
+            "url": "/1000",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-20T00:09:10.516Z",
+            "modified": "2023-11-20T00:09:47.877Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0ee2e0e7-47d0-4288-b874-20506f911d25",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "0e0ede7e-dc9b-4886-b74a-bf78990427fd",
+            "name": "getBook",
+            "url": "",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-11-19T23:49:10.936Z",
+            "modified": "2023-11-19T23:49:10.936Z",
+            "headers": []
+        },
+        {
+            "_id": "9bf9bd5e-bfb6-471f-8364-e5435900532f",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "6a3b2342-880d-48f7-a19c-38bfc590c93d",
+            "name": "postCategory",
+            "url": "/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-11-20T00:03:02.057Z",
+            "modified": "2023-11-20T00:05:59.698Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"terror\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "19a9ce86-cf53-4d2a-a560-45ebd4cc16ab",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "99d8872f-b6bf-445f-b250-97c86ff975b3",
+            "name": "postUser",
+            "url": "/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-11-20T00:09:12.522Z",
+            "modified": "2023-11-20T00:11:50.806Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"joseba15\",\n  \"email\": \"joseba15@gmail.com\",\n  \"password\": \"joseba\",\n  \"role\": \"admin\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "71cdfc48-a51b-4ed1-a816-61695a42bcc3",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "0e0ede7e-dc9b-4886-b74a-bf78990427fd",
+            "name": "getBookError",
+            "url": "",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-11-19T23:49:38.560Z",
+            "modified": "2023-11-19T23:49:38.560Z",
+            "headers": []
+        },
+        {
+            "_id": "d933cf7f-e65e-4187-b70b-d05007f7d481",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "6a3b2342-880d-48f7-a19c-38bfc590c93d",
+            "name": "postCategoryErrorExits ",
+            "url": "/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-11-20T00:03:08.994Z",
+            "modified": "2023-11-20T00:06:33.475Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"terror\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "573303e2-5486-4fb9-921a-406b2ed5e5dc",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "99d8872f-b6bf-445f-b250-97c86ff975b3",
+            "name": "postUserErrorFields",
+            "url": "/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-11-20T00:09:13.954Z",
+            "modified": "2023-11-20T00:11:46.674Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"pepe\",\n  \"role\": \"user\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e7b588c6-fd25-459a-bbae-e95b642388b7",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "0e0ede7e-dc9b-4886-b74a-bf78990427fd",
+            "name": "postBook",
+            "url": "/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-11-19T23:50:19.090Z",
+            "modified": "2023-11-19T23:51:53.436Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"hola\",\n    \"author\": \"pepe\",\n    \"pages\": 100,\n    \"price\": 23,\n    \"idCategory\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bbcfb134-cda2-4383-8b6c-0a0720fdc8b7",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "6a3b2342-880d-48f7-a19c-38bfc590c93d",
+            "name": "putCategory",
+            "url": "/1",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-11-20T00:03:15.008Z",
+            "modified": "2023-11-20T00:07:34.932Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"terror2\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1d8abb7c-31a1-4b7e-8eb6-e1c325b435a8",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "99d8872f-b6bf-445f-b250-97c86ff975b3",
+            "name": "postUserErrorExits",
+            "url": "/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-11-20T00:09:15.463Z",
+            "modified": "2023-11-20T00:12:47.263Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"joseba15\",\n  \"email\": \"joseba15@gmail.com\",\n  \"password\": \"joseba\",\n  \"role\": \"admin\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "33a1ab33-7c27-4a16-8e7f-d1c3aa7f49c5",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "6a3b2342-880d-48f7-a19c-38bfc590c93d",
+            "name": "putCategoryErrorNotFound",
+            "url": "/999",
+            "method": "PUT",
+            "sortNum": 65000,
+            "created": "2023-11-20T00:03:18.820Z",
+            "modified": "2023-11-20T00:07:53.523Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"terror2\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "da89d87e-2f78-4fe7-8087-f335978459c1",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "99d8872f-b6bf-445f-b250-97c86ff975b3",
+            "name": "putUser",
+            "url": "/1",
+            "method": "PUT",
+            "sortNum": 65000,
+            "created": "2023-11-20T00:09:20.808Z",
+            "modified": "2023-11-20T00:13:36.553Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"joseba999\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "34230e93-6a5a-4471-9c5a-5abaaca612f6",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "99d8872f-b6bf-445f-b250-97c86ff975b3",
+            "name": "putUserErrorNotFound",
+            "url": "/99999999999",
+            "method": "PUT",
+            "sortNum": 67500,
+            "created": "2023-11-20T00:09:22.514Z",
+            "modified": "2023-11-20T00:14:32.381Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"joseba999\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "85c159d5-e11a-41f4-9329-e03a92468c26",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "0e0ede7e-dc9b-4886-b74a-bf78990427fd",
+            "name": "postBookErrorExits",
+            "url": "/",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-11-19T23:52:38.810Z",
+            "modified": "2023-11-19T23:52:59.134Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"hola\",\n    \"author\": \"pepe\",\n    \"pages\": 100,\n    \"price\": 23,\n    \"idCategory\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "39c0412c-6d0f-4336-bc91-7c912c6abdca",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "99d8872f-b6bf-445f-b250-97c86ff975b3",
+            "name": "deleteUser",
+            "url": "/1",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-11-20T00:09:17.231Z",
+            "modified": "2023-11-20T00:09:17.231Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "51e7a9ae-50b2-44eb-a207-954b1ccf48e7",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "0e0ede7e-dc9b-4886-b74a-bf78990427fd",
+            "name": "postBookErrorFields",
+            "url": "/",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-11-19T23:53:29.312Z",
+            "modified": "2023-11-19T23:54:07.585Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \n    \"author\": \"pepe\",\n    \"pages\": 100,\n    \"price\": 23,\n    \"idCategory\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "87e78367-26b7-4688-994e-e5ad7a2b24bd",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "6a3b2342-880d-48f7-a19c-38bfc590c93d",
+            "name": "deleteCategory",
+            "url": "/1",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-11-20T00:03:22.645Z",
+            "modified": "2023-11-20T00:03:22.645Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7ccd1fd6-2d47-48f4-912a-2a214da2eadd",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "99d8872f-b6bf-445f-b250-97c86ff975b3",
+            "name": "deleteUserErrorNotFound",
+            "url": "/999999999999",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-11-20T00:09:18.842Z",
+            "modified": "2023-11-20T00:15:29.445Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "846e2d65-4bbf-4000-a7ed-b232ef98f721",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "0e0ede7e-dc9b-4886-b74a-bf78990427fd",
+            "name": "putBook",
+            "url": "/1",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2023-11-19T23:54:47.948Z",
+            "modified": "2023-11-19T23:55:21.085Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"hola2\",\n    \"author\": \"pepito\",\n    \"pages\": 100,\n    \"price\": 23,\n    \"idCategory\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4c7f34fd-79d0-4065-8ab5-e52fc116b25b",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "6a3b2342-880d-48f7-a19c-38bfc590c93d",
+            "name": "deleteCategoryErrorNotFound ",
+            "url": "/1",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-11-20T00:03:25.223Z",
+            "modified": "2023-11-20T00:03:25.223Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "94a8ba3a-8e1a-4443-bed5-b49452e81338",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "0e0ede7e-dc9b-4886-b74a-bf78990427fd",
+            "name": "putBookErrorNotFound",
+            "url": "/999",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2023-11-19T23:55:27.028Z",
+            "modified": "2023-11-19T23:55:51.675Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"hola2\",\n    \"author\": \"pepito\",\n    \"pages\": 100,\n    \"price\": 23,\n    \"idCategory\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f43bbe7c-1373-44df-aabf-6ee9fdcfb187",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "0e0ede7e-dc9b-4886-b74a-bf78990427fd",
+            "name": "deleteBook",
+            "url": "/1",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2023-11-19T23:56:04.133Z",
+            "modified": "2023-11-19T23:56:12.729Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "57597d25-0426-4505-b62b-943df04251e2",
+            "colId": "62ed6aab-8dce-42aa-b14f-01e12fdbd5d1",
+            "containerId": "0e0ede7e-dc9b-4886-b74a-bf78990427fd",
+            "name": "deleteBookErrorNotFound ",
+            "url": "/1",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2023-11-19T23:56:17.179Z",
+            "modified": "2023-11-19T23:56:17.179Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
