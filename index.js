@@ -1,6 +1,11 @@
 const express = require("express");
 const app = express();
+
+
 const userRoutes = require("./routes/user.js");
+const bookRoutes = require("./routes/books.js");
+const categoryRoutes = require("./routes/category.js");
+
 
 const mongoose = require("mongoose");
 require('dotenv').config();
@@ -17,8 +22,8 @@ main().catch((err) => console.log(err));
 app.use(express.json());
 
 app.use('/user',userRoutes);
-// app.use('/cars', carRoutes);
-
+app.use('/books', bookRoutes);
+app.use('/category',categoryRoutes);
 
  
 

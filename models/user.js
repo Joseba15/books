@@ -18,7 +18,6 @@ const UserSchema = Schema({
     },
     role: {
         type: String,
-        required: true,
         emun: ['ADMIN', 'USER']
     },
 })

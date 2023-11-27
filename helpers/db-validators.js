@@ -1,5 +1,5 @@
-const User = require('../models/user');
+// const User = require('../models/user');
 
-const existEmail = async (email) =>{
+// const existEmail = async (email) =>{
     
-}
+// }
