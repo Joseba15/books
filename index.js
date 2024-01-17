@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 
 
@@ -20,6 +21,7 @@ main().catch((err) => console.log(err));
 
 
 app.use(express.json());
+app.use(cors());
 
 app.use('/user',userRoutes);
 app.use('/books', bookRoutes);
