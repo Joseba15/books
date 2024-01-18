@@ -30,8 +30,8 @@ const postBook = async (req, res) => {
  
     const { title,author,pages,price,idCategory } =req.body;
 
-    const newBook = new User ({  title,author,pages,price,idCategory})
-    const aux = await Film.findOne({title})
+    const newBook = new Book ({  title,author,pages,price,idCategory})
+    const aux = await Book.findOne({title})
 
     if (aux==null) {
         await newBook.save();
@@ -45,7 +45,7 @@ const postBook = async (req, res) => {
     }
 
 
-    res.status(500).json({msg: err})
+    // res.status(500).json({msg: err})
 
 
 

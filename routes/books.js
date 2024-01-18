@@ -18,7 +18,7 @@ router.post('/',[
   check ('pages','pages is required').not().isEmpty(),  
   check ('price','price is required').not().isEmpty(),
   check('title', 'title must be more than 6 characters').isLength({ min: 6}),
-  check('price', 'price must be a number ').not().isNumeric(),
+  // check('price', 'price must be a number ').not().isNumeric(),
   validateFields
 ],postBook);
 
