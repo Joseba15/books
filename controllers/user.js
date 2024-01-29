@@ -28,19 +28,21 @@ const getUser = async (req =request,res= response) =>{
 const postUser = async (req, res) => {
 
  
-    const { username,email,password } =req.body;
+    const { username,name,email,password } =req.body;
     const userRole = 'USER'
-    const aux = await User.findOne({email});
+    const userByEmail = await User.findOne({email});
+    const userByUsername = await User.findOne({username});
 
-    const newUser = new User ({ username,email,password,userRole })
 
-    if(aux==null){
+    const newUser = new User ({ username,name,email,password,userRole })
+
+    if(userByEmail==null || userByUsername==null){
         await newUser.save();
-    
+
         res.json({newUser});
 
     }else{
-        res.status(500).json({msg: 'Usuario con el correo registrado '})
+        res.status(500).json({msg: 'Usuario con el correo/nombre de usuario registrado '})
 
     }
 

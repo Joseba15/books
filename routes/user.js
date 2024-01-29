@@ -32,7 +32,7 @@ router.put('/:id', [
   check('password', 'la contraseña es requerida').not().isEmpty(),
   check('password', 'El password debe de ser más de 4 letras').isLength({ min: 4 }),
   check('email', 'El correo es requerido').not().isEmpty(),
-  check('email', 'El correo no es válido').isEmail(),
+  check('email', 'El correo no es válido').isEmail() ,
   validateFields
 ],updateUser );
 
