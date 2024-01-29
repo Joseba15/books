@@ -29,11 +29,11 @@ const postUser = async (req, res) => {
 
  
     const { username,name,email,password } =req.body;
-    const userRole = 'USER'
+    const role = 'USER'
 
 
 
-    const newUser = new User ({ username,name,email,password,userRole })
+    const newUser = new User ({ username,name,email,password,role })
 
     try {
         await newUser.save();
@@ -41,8 +41,11 @@ const postUser = async (req, res) => {
         res.json({newUser});
         
     } catch (error) {
-        res.status(500).json({msg: err})
-
+        if(error.keyValue.email){
+            res.status(500).json({msg: "usuario con email repetido"})
+        }else if(error.keyValue.username){
+            res.status(500).json({msg: "usuario con nombre de usuario repetido"})
+        }
     }
 
     

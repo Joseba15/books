@@ -7,7 +7,6 @@ const UserSchema = Schema({
         type: String,
         required: [true, 'Username is mandatory'],
         unique: true
-
     },
     name: {
         type: String,
@@ -25,7 +24,7 @@ const UserSchema = Schema({
     role: {
         type: String,
         emun: ['ADMIN', 'USER']
-    },
+    }
 })
 
 module.exports = mongoose.model("User", UserSchema);

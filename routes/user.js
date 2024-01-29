@@ -13,8 +13,8 @@ router.get('/', getUsers);
 
 
 router.post('/',[
-  check ('username','username is required').not().isEmpty(),
-  check ('password','password is required').not().isEmpty(),
+  check('username','username is required').not().isEmpty(),
+  check('password','password is required').not().isEmpty(),
   check('password', 'El password debe de ser más de 4 letras').isLength({ min: 4 }),
   check('email', 'El correo es requerido').not().isEmpty(),
   check('email', 'El correo no es válido').isEmail(),
