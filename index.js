@@ -23,7 +23,7 @@ main().catch((err) => console.log(err));
 app.use(express.json());
 app.use(cors());
 
-app.use('/user',userRoutes);
+app.use('/users',userRoutes);
 app.use('/books', bookRoutes);
 app.use('/category',categoryRoutes);
 

@@ -1,4 +1,6 @@
 const User = require("../models/user");
+const bcryptjs = require('bcryptjs')
+const { validPassword } = require("../helpers/db-validators.js");
 
 const getUsers = async (req,res) =>{
     try{
@@ -30,12 +32,21 @@ const postUser = async (req, res) => {
  
     const { username,name,email,password } =req.body;
     const role = 'USER'
+    const active = true;
 
+    // let isPasswordValid = await validPassword(password);
 
+    // if (!isPasswordValid) {
+    //     return res.status(400).json({ error: 'La contraseña no cumple con los requisitos' });
+    // }
 
-    const newUser = new User ({ username,name,email,password,role })
-
+    const newUser = new User ({ username,name,email,password,role,active })
+    
     try {
+        // const isPasswordValid = await validPassword(password);
+        const salt = bcryptjs.genSaltSync();
+        newUser.password = bcryptjs.hashSync( password, salt );
+
         await newUser.save();
     
         res.json({newUser});
@@ -60,7 +71,10 @@ const deleteUser = async (req, res) => {
     const user = await User.findById( id );
 
     if (user) {
-        const userDelete = await User.findOneAndDelete({ "_id": id })
+        // const userDelete = await User.findOneAndDelete({ "_id": id })
+        // res.json({userDelete})
+        const body= {active: false};
+        const userDelete = await User.findByIdAndUpdate(id,body )
         res.json({userDelete})
     }else{
 

@@ -24,6 +24,9 @@ const UserSchema = Schema({
     role: {
         type: String,
         emun: ['ADMIN', 'USER']
+    },
+    active: {
+        type: Boolean
     }
 })
 
