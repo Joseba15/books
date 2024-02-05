@@ -23,11 +23,19 @@ const UserSchema = Schema({
     },
     role: {
         type: String,
+        requirede: true,
         emun: ['ADMIN', 'USER']
     },
     active: {
         type: Boolean
     }
 })
+
+
+UserSchema.methods.toJSON = function() {
+    const { __v, password, _id, ...user} = this.toObject();
+    user.uid = _id;
+    return user;
+}
 
 module.exports = mongoose.model("User", UserSchema);

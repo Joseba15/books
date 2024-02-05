@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const {check}= require('express-validator')
 const { validateFields } = require("../middlewares/validate-fields.js");
-const { validPassword } = require("../helpers/db-validators.js");
+const { validateJWT} = require("../middlewares/validate-jwt.js");
 const {getUsers,postUser,deleteUser,getUser,updateUser} = require('../controllers/user.js');
 
 router.get('/:id',[
@@ -23,6 +23,7 @@ router.post('/',[
 ],postUser);
 
 router.delete('/:id',[
+  validateJWT,
   check('id','Tiene que ser un id valido').isMongoId()
 ],deleteUser);
 

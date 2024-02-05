@@ -6,6 +6,7 @@ const app = express();
 const userRoutes = require("./routes/user.js");
 const bookRoutes = require("./routes/books.js");
 const categoryRoutes = require("./routes/category.js");
+const authRoutes = require("./routes/auth.js");
 
 
 const mongoose = require("mongoose");
@@ -26,6 +27,8 @@ app.use(cors());
 app.use('/users',userRoutes);
 app.use('/books', bookRoutes);
 app.use('/category',categoryRoutes);
+app.use('/auth',authRoutes);
+
 
  
 

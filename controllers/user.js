@@ -14,7 +14,6 @@ const getUsers = async (req,res) =>{
 
 const getUser = async (req =request,res= response) =>{
     const id = req.params.id
-    const user = await User.findById(id);
 
     if (user) {
         
@@ -34,11 +33,6 @@ const postUser = async (req, res) => {
     const role = 'USER'
     const active = true;
 
-    // let isPasswordValid = await validPassword(password);
-
-    // if (!isPasswordValid) {
-    //     return res.status(400).json({ error: 'La contraseña no cumple con los requisitos' });
-    // }
 
     const newUser = new User ({ username,name,email,password,role,active })
     
