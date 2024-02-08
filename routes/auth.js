@@ -1,8 +1,9 @@
 const express = require('express')
 const router = express.Router()
-const {login} = require('../controllers/auth')
+const {login,renew} = require('../controllers/auth')
 const { check } = require('express-validator')
 const { validateFields } = require("../middlewares/validate-fields.js");
+const { validateJWT } = require('../middlewares/validate-jwt');
 
 
 router.post('/login',[
@@ -14,6 +15,8 @@ router.post('/login',[
     .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/),
     validateFields
 ], login );
+
+router.get('/renew',[validateJWT],renew);
 
 
 

@@ -18,10 +18,17 @@ const login = async(req=request, res=response) =>{
     else if (!validPassword) {
             return res.status(400).json({mensage: 'La contraseña no es correcta'})
     }else{
-        const token = await genJWT(user.uid);
+        const token = await genJWT(user.id);
         res.json({user,token})
     }   
 
 }
 
-module.exports = {login}
+const renew = async(req=request, res=response) =>{
+    const user = req.user;
+
+    const token = await genJWT(user.uid);
+    res.json({user,token})
+}
+
+module.exports = {login,renew}
